@@ -1,14 +1,12 @@
 /**
-* Template Name: TheEvent
-* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+* Template Name: 
+* Template URL: 
 * Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Author:
 */
 
 /*--------------------------------------------------------------
 # Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
@@ -878,6 +876,21 @@ section,
   justify-content: center;
   flex-direction: column;
 }
+.hero.section {
+  position: relative; /* This allows positioning the video within the section */
+  /* Adjust width and height as needed for your video */
+  width: 100%;
+  height: 500px; /* Adjust height based on your video dimensions */
+}
+
+.hero.section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This covers the entire section with the video */
+}
 
 .hero img {
   position: absolute;
@@ -1571,7 +1584,7 @@ section,
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   border-radius: 50%;
   border: 2px dotted color-mix(in srgb, var(--accent-color), transparent 40%);
 }
